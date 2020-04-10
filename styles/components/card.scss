@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+@import "../base/colors.scss";
+@import "../base/generic.scss";
+
+$card-color: $white;
+
+$card-border-radius: $border-radius-default;
+
+$card-padding: $padding-default;
+
+$card-right-controller-color: $cta-color;
+
+$card-header-size: $font-size-big;
+
+$card-header-font-weight: $font-weight-bold;
+
+$card-header-margin-bottom: $margin-default;
+
+$card-header-controller-size: $font-size-default;
+
+$card-header-controller-font-weight: $font-weight-bold;

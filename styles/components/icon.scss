@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+@import "../base/colors.scss";
+@import "../base/generic.scss";
+
+$icon-color: $dark-gray;
+$icon-color-light: $light-gray;
+
+$icon-color-alert: $tertiary-color-dark;
+$icon-color-alert-light: $tertiary-color-light;
+
+$icon-color-error: $primary-color-dark;
+$icon-color-error-light: $primary-color-light;
+
+$icon-color-active: $secondary-color-dark;
+$icon-color-active-light: $secondary-color-light;
+
+$icon-size-default: (24/$rem-base)+rem;
+
+$icon-stroke-width: 2;
+
+$icon-line-cap-join: round;

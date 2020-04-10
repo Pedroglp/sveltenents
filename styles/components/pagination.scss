@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+@import "../base/colors.scss";
+@import "../base/generic.scss";
+
+$pagination-page-number-width: (66/$rem-base)+rem;
+
+$pagination-controller-padding: 0.2rem 0.2rem;
+
+$pagination-controller-border-radius: $border-radius-default; 
+
+$pagination-controller-background-color: $white;
+
+$pagination-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+
+$pagination-box-shadow-hover: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
+
+$pagination-box-shadow-active: 1px 1px 0px 0px rgba(0, 0, 0, 0.05);
+
+$pagination-font-size: $font-size-default;
+
+$pagination-color: $dark-gray;
+
+$pagination-color-hover: $cta-color-light;

@@ -1,0 +1,41 @@
+/** I used this guide as base: https://gist.github.com/glueckpress/5653233 */
+
+@charset "utf-8";
+@import "colors.scss";
+
+/** Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,600&display=swap');
+
+/** Spacing */
+$rem-base: 16;
+
+/** Margins */
+
+$margin-small: (10/$rem-base)+rem;
+$margin-default: (16/$rem-base)+rem;
+$margin-big: (18/$rem-base)+rem;
+
+/** Paddings */
+
+$padding-small: $margin-small;
+$padding-default: $margin-default;
+$padding-big: $margin-big;
+
+$line-height-default: 18/$rem-base;
+
+/** Fonts */
+
+$font-size-small: (12/$rem-base)+rem;
+$font-size-regular: (14/$rem-base)+rem;
+$font-size-default: (16/$rem-base)+rem;
+$font-size-medium: (20/$rem-base)+rem;
+$font-size-big: (24/$rem-base)+rem;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
+/** Others */
+
+$border-radius-default: 4px;

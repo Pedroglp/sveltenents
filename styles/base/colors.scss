@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/** Base Colors */
+
+$primary-color: #D3202D;
+$secondary-color: #5E7E55;
+$tertiary-color: #FCC153;
+
+$white: #FBFBFB;
+$light-gray: #F1F1F1;
+$gray: #DFDFDF;
+$dark-gray: #8c8c8c;
+
+$black: #463D3E;
+
+/** Variants */
+
+$darken-factor: 10%;
+$lighten-factor: 20%;
+
+$primary-color-dark: darken($primary-color, $darken-factor);
+$primary-color-light: lighten($primary-color, $lighten-factor);
+
+$secondary-color-dark: darken($secondary-color, $darken-factor);
+$secondary-color-light: lighten($secondary-color, $lighten-factor);
+
+$tertiary-color-dark: darken($tertiary-color, $darken-factor);
+$tertiary-color-light: lighten($tertiary-color, $lighten-factor);
+
+/** Context Colors */
+
+$cta-color-light: $secondary-color-light;
+$cta-color: $secondary-color;
+$cta-color-dark: $secondary-color-dark;
+
+$bg-color: $primary-color;
+
+$error-color: $primary-color-light;
+$warning-color: $tertiary-color-light;
+$success-color: $secondary-color-light;
+
+

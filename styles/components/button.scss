@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@import "../base/colors.scss";
+@import "../base/generic.scss";
+
+$button-bg-color: $primary-color;
+
+/** Colors */
+
+$button-color: $cta-color;
+
+$button-color-hover: $cta-color-dark;
+
+$button-text-colot: $white;
+
+$button-color-disabled: $gray;
+
+$button-text-color-disabled: $white;
+
+/** Spacing */
+
+$button-padding: 0.571428571rem 1.28571429rem;
+$button-margin: 0;
+
+/** Sizes */
+
+$button-border-radius: $border-radius-default;
+
+$button-font-size: $font-size-default;
+$button-font-weight: $font-weight-bold;
+$button-min-width: 6rem; 

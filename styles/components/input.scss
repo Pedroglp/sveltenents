@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@import "../base/colors.scss";
+@import "../base/generic.scss";
+
+$input-background-color: $light-gray;
+
+$input-text-color: $black;
+
+$input-text-indent: $padding-default;
+
+$input-text-indent-icon: 2.5rem;
+
+$input-error-color: $error-color;
+
+$input-padding-top-bottom: $padding-small; 
+
+$input-icon-padding: $padding-small;
+
+$input-padding-left-right: 0px;
+
+$input-border-radius: $border-radius-default;
+
+$input-border-bottom: solid 3px $gray;
+
+$input-border-bottom-focus: solid 3px $cta-color-light;
+
+$input-border-color-error: $input-error-color;
+
+$input-font-size-error: $font-size-small;
+
+
