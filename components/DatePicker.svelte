@@ -82,9 +82,9 @@
     }
   }
 
-  export function toString() {
+  export function toString(date, format) {
     if(typeof datePicker !== 'undefined') {
-      return datePicker.toString();
+      return datePicker.toString(date, format);
     }
   }
 
