@@ -26,6 +26,7 @@ export let name = '';
 export let autocomplete = 'off';
 export let rightIcon, leftIcon;
 export let onRightIconClick, onLeftIconClick = () => {};
+export let id = '';
 
 let passwordVisibile =  false;
 
@@ -212,6 +213,7 @@ function onInput(event) {
         class:hasIcon={ !!leftIcon }
         placeholder={ placeholder }
         bind:value={ value }
+        id={ id }
         autocomplete={ autocomplete }
         readonly= { readonly }
         bind:this={ input }
