@@ -4,8 +4,8 @@
   const dispatch = createEventDispatcher();
   export let isGhost = false;
   export let isDisabled = false;
-  export let value = '';
-  export let type = '';
+  export let value;
+  export let type;
   export let sendForm = true;
 
   function onClick() {
