@@ -26,7 +26,7 @@ export let name = '';
 export let autocomplete = 'off';
 export let rightIcon, leftIcon;
 export let onRightIconClick, onLeftIconClick = () => {};
-export let id = '';
+export let id = null;
 
 let passwordVisibile =  false;
 
