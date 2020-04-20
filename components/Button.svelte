@@ -4,6 +4,9 @@
   const dispatch = createEventDispatcher();
   export let isGhost = false;
   export let isDisabled = false;
+  export let value = '';
+  export let type = '';
+  export let sendForm = true;
 
   function onClick() {
     dispatch('click');
@@ -67,9 +70,12 @@
 </style>
 
 <button 
+  value={ value }
+  type= { type }
   class:ghost={ isGhost }
   class:disabled={ isDisabled }
-  on:click={() => { onClick(); }}
+  on:click={() => { onClick() }}
+  onclick="return { sendForm }"
   >
   <slot></slot>
 </button>
