@@ -23,6 +23,7 @@ export let step = '';
 export let width = '';
 export let height = '';
 export let name = '';
+export let autocomplete = 'off';
 export let rightIcon, leftIcon;
 export let onRightIconClick, onLeftIconClick = () => {};
 
@@ -211,6 +212,7 @@ function onInput(event) {
         class:hasIcon={ !!leftIcon }
         placeholder={ placeholder }
         bind:value={ value }
+        autocomplete={ autocomplete }
         readonly= { readonly }
         bind:this={ input }
         on:focus={ (event) => { onFocus(event) }}
