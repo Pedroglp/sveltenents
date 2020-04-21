@@ -41,8 +41,7 @@
 		transform: scale(0.99);
   }
 
-  button:hover,
-  button:focus {
+  button:hover {
       background: $button-color-hover;
   }
 
@@ -53,14 +52,12 @@
     text-decoration: underline;
   }
 
-  .ghost:hover,
-  .ghost:focus {
+  .ghost:hover {
     background-color: $light-gray;
   }
 
   .disabled,
-  .disabled:hover,
-  .disabled:focus {
+  .disabled:hover {
     pointer-events: none;
     cursor: default;
     background: $button-color-disabled;
