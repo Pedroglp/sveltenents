@@ -7,10 +7,22 @@
 	import Icon from '../components/Icon.svelte';
 	import PopUp from '../components/PopUp.svelte';
 	import DatePicker from '../components/DatePicker.svelte';
+	import Notification from '../components/Notification.svelte';
 
 	import { showPageContent } from '../api/store.js';
 
 	let popUp;
+	let notificationInfo;
+	let notificationSuccess;
+	let notificationWarning;
+	let notificationError;
+
+	function showNotification() {
+		notificationInfo.show();
+	 	notificationSuccess.show();
+	 	notificationWarning.show();
+	 	notificationError.show();
+	}
 	
 </script>
 
@@ -18,6 +30,7 @@
 	@import "./styles/base/_all.scss";
 
   .page-content {
+		position: static;
     display: grid;
     gap: $margin-default;
     padding: $margin-default;
@@ -81,7 +94,19 @@
 			<h2>Pop Up </h2>
 			<Button on:click={ ()=> { popUp.open(1500) }}>Click to Open</Button>
 			<div class="divisor"></div>
+			<h2>Calendar</h2>
 			<DatePicker></DatePicker>
+			<div class="divisor"></div>
+			<h2>Notification</h2>
+			<Notification message="Information text message" bind:this={ notificationInfo }/>
+			<div class="divisor"></div>
+			<Notification success message="Success text message" bind:this={ notificationSuccess }/>
+			<div class="divisor"></div>
+			<Notification warning message="Warning text message" bind:this={ notificationWarning }/>
+			<div class="divisor"></div>
+			<Notification error message="Error text message" bind:this={ notificationError }/>
+			<div class="divisor"></div>
+			<Button on:click={ ()=> { showNotification() }}>Click to Open</Button>
 		</div>
 	</Card>
 </div>
