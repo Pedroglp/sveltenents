@@ -16,7 +16,7 @@ $black: #463D3E;
 /** Variants */
 
 $darken-factor: 10%;
-$lighten-factor: 27%;
+$lighten-factor: 25%;
 
 $primary-color-dark: darken($primary-color, $darken-factor);
 $primary-color-light: lighten($primary-color, $lighten-factor);
