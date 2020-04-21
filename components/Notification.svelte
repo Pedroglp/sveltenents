@@ -9,13 +9,25 @@
   export let isHidden =  true;
   export let message;
 
-  export function show() {
+  export function show(delay) {
     isHidden = false;
+
+    if(typeof delay !== 'undefined' && Number(delay) !== 'NaN') {
+      close(delay);
+      return;
+    }
   }
 
-  export function hide() {
+  export function hide(delay) {
+    if(typeof delay !== 'undefined' && Number(delay) !== 'NaN') {
+      setTimeout(() => {
+        isHidden = true;
+      }, delay);
+      return;
+    }
     isHidden = true;
   }
+
 
 </script>
 
