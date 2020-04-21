@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+@import "../base/colors.scss";
+@import "../base/generic.scss";
+
+$notification-info-color: $dark-gray;
+$notification-info-background-color: $light-gray;
+$notification-info-text-color: $black;
+
+$notification-warning-color: $tertiary-color-dark;
+$notification-warning-background-color: $tertiary-color-light;
+$notification-warning-text-color: $tertiary-color-dark;
+
+$notification-error-color: $primary-color-dark;
+$notification-error-background-color: $primary-color-light;
+$notification-error-text-color: $primary-color-dark;
+
+$notification-success-color: $secondary-color-dark;
+$notification-success-background-color: $secondary-color-light;
+$notification-success-text-color: $secondary-color-dark;
+
+$notification-text-weight: 500;
+
+$notification-border-radius: $border-radius-default;
+
+$notification-border-left: solid 8px;
+
+$notification-message-left-margin: $margin-default;
+
+$notification-padding: $padding-small;
