@@ -19,9 +19,9 @@
 
 	function showNotification() {
 		notificationInfo.show();
-	 	notificationSuccess.show();
-	 	notificationWarning.show();
-	 	notificationError.show();
+	 	notificationSuccess.show(100);
+	 	notificationWarning.show(150);
+	 	notificationError.show(200);
 	}
 	
 </script>
