@@ -16,6 +16,7 @@
   @import "../styles/components/card.scss";
 
   .card-wrapper {
+    position: relative;
     background-color: $card-color;
     display: block;
     padding: $card-padding;
