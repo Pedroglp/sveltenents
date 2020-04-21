@@ -8,7 +8,6 @@
   export let warning = false;
   export let error =  false;
   export let fill = false;
-
   let iconClass = 'icon';
   let iconStyle = '';
   let icon;
@@ -78,7 +77,7 @@
     stroke: $icon-color-active-light;
 
     &.filled {
-      stroke: $icon-color-active-light;
+      stroke: $icon-color-active;
       fill: $icon-color-active-light;
     }
   }
