@@ -13,7 +13,9 @@
     isHidden = false;
 
     if(typeof delay !== 'undefined' && Number(delay) !== 'NaN') {
-      close(delay);
+      setTimeout(() => {
+        hide();
+      }, delay);
       return;
     }
   }
@@ -108,6 +110,7 @@
       class:warning={warning}
       class:error={error}
       class:success={success}
+      {...$$restProps}
     >
       {#if success}
         <Icon active fill name="check-circle"></Icon>
