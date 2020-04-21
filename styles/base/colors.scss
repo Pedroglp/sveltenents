@@ -3,7 +3,7 @@
 /** Base Colors */
 
 $primary-color: #D3202D;
-$secondary-color: #5E7E55;
+$secondary-color: rgb(87, 145, 71);
 $tertiary-color: #FCC153;
 
 $white: #FBFBFB;
@@ -16,7 +16,7 @@ $black: #463D3E;
 /** Variants */
 
 $darken-factor: 10%;
-$lighten-factor: 20%;
+$lighten-factor: 27%;
 
 $primary-color-dark: darken($primary-color, $darken-factor);
 $primary-color-light: lighten($primary-color, $lighten-factor);
