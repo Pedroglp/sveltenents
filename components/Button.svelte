@@ -7,6 +7,7 @@
   export let value;
   export let type;
   export let sendForm = true;
+  export let full;
 
   function onClick() {
     dispatch('click');
@@ -35,6 +36,10 @@
                 transform 150ms ease;
     -webkit-appearance: none;
     -moz-appearance: none;
+  }
+
+  button.full {
+    width: 100%;
   }
 
   button:active {
@@ -71,6 +76,7 @@
   type= { type }
   class:ghost={ isGhost }
   class:disabled={ isDisabled }
+  class:full
   on:click={() => { onClick() }}
   onclick="return { sendForm }"
   >

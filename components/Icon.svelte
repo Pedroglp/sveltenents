@@ -8,6 +8,8 @@
   export let warning = false;
   export let error =  false;
   export let fill = false;
+  export let strokeColor;
+  export let fillColor;
   let iconClass = 'icon';
   let iconStyle = '';
   let icon;
@@ -19,13 +21,17 @@
           ${error ? 'error ' : '' }
           ${fill ? 'filled ' : '' }
         `
-    feather.replace({ class: iconClass })
+    feather.replace({ class: iconClass });
   }
 
   $: {
     iconStyle =
       `width: ${size}px;
-      height: ${size}px;`
+      height: ${size}px;
+      stroke: ${strokeColor};
+      fill: ${fillColor}`
+
+    feather.replace({ style: iconStyle });
   }
 
   onMount(() => {
